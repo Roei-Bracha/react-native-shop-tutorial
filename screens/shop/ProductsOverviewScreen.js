@@ -15,6 +15,7 @@ const ProductsOverviewScreen = props => {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState(undefined)
   const loadData = async () => {
+    setError(null)
     setIsLoading(true)
     dispatch(fetchProducts()).then(() => {
       setIsLoading(false)
