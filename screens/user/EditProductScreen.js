@@ -5,6 +5,8 @@ import {
   StyleSheet,
   Platform,
   Alert,
+  Text,
+  Button,
   KeyboardAvoidingView,
   ActivityIndicator
 } from 'react-native';
