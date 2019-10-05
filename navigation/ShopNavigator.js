@@ -13,6 +13,7 @@ import UserProductsScreen from '../screens/user/UserProductsScreen';
 import EditProductScreen from '../screens/user/EditProductScreen';
 import Colors from '../constants/Colors';
 import AuthScreen from '../screens/user/AuthScreen';
+import StartupScreen from '../screens/StartupScreen';
 
 const defaultNavOptions = {
   headerStyle: {
@@ -101,6 +102,6 @@ const AuthNavigator = createStackNavigator({
   AuthScreen:AuthScreen
 },{defaultNavigationOptions:defaultNavOptions})
 
-const MainNavigator = createSwitchNavigator({Auth:AuthNavigator,Shop:ShopNavigator})
+const MainNavigator = createSwitchNavigator({Startup:StartupScreen, Auth:AuthNavigator,Shop:ShopNavigator})
 
 export default createAppContainer(MainNavigator);
